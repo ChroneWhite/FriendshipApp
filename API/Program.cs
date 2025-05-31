@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
+
+
 namespace API
 {
     public class Program
@@ -17,10 +19,21 @@ namespace API
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-                webBuilder.UseStartup<Startup>();
-            });
+    Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder
+                .UseStartup<Startup>()
+                .UseKestrel(options =>
+                {
+                    options.ListenLocalhost(5001, listenOptions =>
+                    {
+                        listenOptions.UseHttps("SSL/server.pfx", "c1nna1v410%");
+                    });
+                });
+        });
+        
+
     }
+    
 }
