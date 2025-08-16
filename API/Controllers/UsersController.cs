@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 using API.Interfaces;
 using API.DTOs;
 using AutoMapper;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
@@ -18,14 +19,14 @@ namespace API.Controllers
     [Authorize]
     public class UsersController : ControllerBase
     {
-        public readonly DataContext _context;
-        private IUserRepository _userRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
         public UsersController(IUserRepository userRepository, IMapper mapper)
         {
-    
+
             _userRepository = userRepository;
-            
+            _mapper = mapper;
+
 
         }
         [HttpGet]
@@ -40,6 +41,23 @@ namespace API.Controllers
         public async Task<ActionResult<MemberDTO>> GetUser(string username)
         {
             return await _userRepository.GetMemberAsync(username);
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateUser(MemberUpdateDTO memberUpdateDTO)
+        {
+            var username = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+
+            _mapper.Map(memberUpdateDTO, user);
+
+            _userRepository.Update(user); 
+
+            if (await _userRepository.SaveAllAsync()) return NoContent();
+            
+            return BadRequest("This was a bad request");
+
         }
 
     }
