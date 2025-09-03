@@ -12,13 +12,14 @@ using API.DTOs;
 using AutoMapper;
 using System.Security.Claims;
 using API.Extensions;
+using API.Helpers;
 
 namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseApiController
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
@@ -32,15 +33,17 @@ namespace API.Controllers
 
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MemberDTO>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers([FromQuery] UserParams userParams)
         {
-            var users = await _userRepository.GetMembersAsync();
+            userParams.CurrentUsername = User.GetUsername();
+            var users = await _userRepository.GetMembersAsync(userParams);
+            Response.AddPaginationHeader(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
 
             return Ok(users);
         }
 
         [HttpGet("{username}", Name = "GetUser")]
-        public async Task<ActionResult<MemberDTO>> GetUser(string username)
+        public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             return await _userRepository.GetMemberAsync(username);
         }
