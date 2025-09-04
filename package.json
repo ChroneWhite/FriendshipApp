@@ -7,7 +7,10 @@
     "@angular/platform-browser": "^20.1.6",
     "@angular/platform-browser-dynamic": "^20.1.6",
     "@angular/router": "^20.1.6",
-    "ngx-timeago": "^4.0.0"
+    "ng2-file-upload-demo": "github:lexasq/ng2-file-upload",
+    "ngx-file-drop": "^16.0.0",
+    "ngx-timeago": "^4.0.0",
+    "ngx-toastr-notifier": "^20.0.9"
   },
   "devDependencies": {
     "@angular/cli": "^20.1.5"
