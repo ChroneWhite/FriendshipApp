@@ -1,0 +1,42 @@
+Date : 2025-11-02 13:33:15
+Directory : /home/ash/FriendshipApp/FriendshipApp1
+Total : 7 files,  93 codes, 0 comments, 9 blanks, all 102 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |          4 |         55 |          0 |          7 |         62 |
+| HTML       |          2 |         38 |          0 |          1 |         39 |
+| PostCSS    |          1 |          0 |          0 |          1 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                          |          7 |         93 |          0 |          9 |        102 |
+| client                                                                                                     |          7 |         93 |          0 |          9 |        102 |
+| client/src                                                                                                 |          7 |         93 |          0 |          9 |        102 |
+| client/src/app                                                                                             |          7 |         93 |          0 |          9 |        102 |
+| client/src/app (Files)                                                                                     |          1 |          2 |          0 |          0 |          2 |
+| client/src/app/_services                                                                                   |          1 |          6 |          0 |          1 |          7 |
+| client/src/app/admin                                                                                       |          2 |         30 |          0 |          2 |         32 |
+| client/src/app/admin/user-management                                                                       |          2 |         30 |          0 |          2 |         32 |
+| client/src/app/modals                                                                                      |          3 |         55 |          0 |          6 |         61 |
+| client/src/app/modals/roles-modal                                                                          |          3 |         55 |          0 |          6 |         61 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                   | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/admin.service.ts                           | TypeScript |          6 |          0 |          1 |          7 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.html | HTML       |          4 |          0 |          0 |          4 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.ts   | TypeScript |         26 |          0 |          2 |         28 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.module.ts                                        | TypeScript |          2 |          0 |          0 |          2 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/modals/roles-modal/roles-modal.component.css         | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/modals/roles-modal/roles-modal.component.html        | HTML       |         34 |          0 |          1 |         35 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/modals/roles-modal/roles-modal.component.ts          | TypeScript |         21 |          0 |          4 |         25 |
+| Total                                                                                                      |            |         93 |          0 |          9 |        102 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

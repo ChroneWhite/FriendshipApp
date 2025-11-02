@@ -1,0 +1,9 @@
+"filename", "language", "TypeScript", "HTML", "PostCSS", "comment", "blank", "total"
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/admin.service.ts", "TypeScript", 6, 0, 0, 0, 1, 7
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.html", "HTML", 0, 4, 0, 0, 0, 4
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.ts", "TypeScript", 26, 0, 0, 0, 2, 28
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.module.ts", "TypeScript", 2, 0, 0, 0, 0, 2
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/modals/roles-modal/roles-modal.component.css", "PostCSS", 0, 0, 0, 0, 1, 1
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/modals/roles-modal/roles-modal.component.html", "HTML", 0, 34, 0, 0, 1, 35
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/modals/roles-modal/roles-modal.component.ts", "TypeScript", 21, 0, 0, 0, 4, 25
+"Total", "-", 55, 38, 0, 0, 9, 102

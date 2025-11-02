@@ -1,0 +1,14 @@
+"filename", "language", "TypeScript", "PostCSS", "HTML", "comment", "blank", "total"
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_directives/has-role.directive.ts", "TypeScript", 28, 0, 0, 0, 1, 29
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_modules/shared.module.ts", "TypeScript", 3, 0, 0, 0, 0, 3
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/admin.service.ts", "TypeScript", 16, 0, 0, 0, 4, 20
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/admin-panel/admin-panel.component.html", "HTML", 0, 0, 14, 0, 1, 15
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/admin-panel/admin-panel.component.ts", "TypeScript", 0, 0, 0, 0, -1, -1
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/photo-management/photo-management.component.css", "PostCSS", 0, 0, 0, 0, 1, 1
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/photo-management/photo-management.component.html", "HTML", 0, 0, 1, 0, 1, 2
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/photo-management/photo-management.component.ts", "TypeScript", 8, 0, 0, 0, 2, 10
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.css", "PostCSS", 0, 0, 0, 0, 1, 1
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.html", "HTML", 0, 0, 14, 0, 1, 15
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/user-management/user-management.component.ts", "TypeScript", 21, 0, 0, 0, 5, 26
+"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.module.ts", "TypeScript", 8, 0, 0, 0, 0, 8
+"Total", "-", 84, 0, 29, 0, 16, 129

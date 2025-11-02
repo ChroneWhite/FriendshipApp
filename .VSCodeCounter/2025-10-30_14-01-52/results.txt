@@ -1,0 +1,198 @@
+Date : 2025-10-30 14:01:52
+Directory : /home/ash/FriendshipApp/FriendshipApp1
+Total : 128 files,  3713 codes, 222 comments, 520 blanks, all 4455 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |         47 |      1,456 |        145 |        230 |      1,831 |
+| C#         |         43 |      1,122 |          0 |        182 |      1,304 |
+| HTML       |         19 |        917 |          0 |         58 |        975 |
+| PostCSS    |         19 |        218 |         77 |         50 |        345 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                         | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                            |        128 |      3,713 |        222 |        520 |      4,455 |
+| API                                                                                                          |         43 |      1,122 |          0 |        182 |      1,304 |
+| API/Controllers                                                                                              |          7 |        422 |          0 |        105 |        527 |
+| API/DTOs                                                                                                     |          9 |        148 |          0 |         17 |        165 |
+| API/Entities                                                                                                 |          6 |        102 |          0 |         11 |        113 |
+| API/Errors                                                                                                   |          1 |         19 |          0 |          2 |         21 |
+| API/Extensions                                                                                               |          5 |        137 |          0 |         15 |        152 |
+| API/Helpers                                                                                                  |          9 |        170 |          0 |         18 |        188 |
+| API/Interfaces                                                                                               |          5 |         80 |          0 |          5 |         85 |
+| API/Middleware                                                                                               |          1 |         44 |          0 |          9 |         53 |
+| client                                                                                                       |         85 |      2,591 |        222 |        338 |      3,151 |
+| client/src                                                                                                   |         85 |      2,591 |        222 |        338 |      3,151 |
+| client/src (Files)                                                                                           |          5 |        177 |        136 |         37 |        350 |
+| client/src/app                                                                                               |         78 |      2,406 |         75 |        297 |      2,778 |
+| client/src/app (Files)                                                                                       |          6 |        243 |          0 |         18 |        261 |
+| client/src/app/_forms                                                                                        |          6 |         84 |          0 |         12 |         96 |
+| client/src/app/_forms/date-input                                                                             |          3 |         39 |          0 |          4 |         43 |
+| client/src/app/_forms/text-input                                                                             |          3 |         45 |          0 |          8 |         53 |
+| client/src/app/_guards                                                                                       |          2 |         47 |          0 |          5 |         52 |
+| client/src/app/_inerceptors                                                                                  |          3 |        127 |          0 |         13 |        140 |
+| client/src/app/_models                                                                                       |          5 |         50 |          0 |          7 |         57 |
+| client/src/app/_modules                                                                                      |          2 |         38 |          0 |          5 |         43 |
+| client/src/app/_pipes                                                                                        |          1 |         30 |          0 |          7 |         37 |
+| client/src/app/_resolvers                                                                                    |          1 |         14 |          0 |          3 |         17 |
+| client/src/app/_services                                                                                     |          6 |        242 |          0 |         46 |        288 |
+| client/src/app/admin                                                                                         |          3 |         10 |          0 |          5 |         15 |
+| client/src/app/admin/admin-panel                                                                             |          3 |         10 |          0 |          5 |         15 |
+| client/src/app/errors                                                                                        |          9 |        152 |          0 |         24 |        176 |
+| client/src/app/errors/not-found                                                                              |          3 |         18 |          0 |          7 |         25 |
+| client/src/app/errors/server-error                                                                           |          3 |         42 |          0 |          5 |         47 |
+| client/src/app/errors/test-errors                                                                            |          3 |         92 |          0 |         12 |        104 |
+| client/src/app/home                                                                                          |          3 |         39 |          0 |          9 |         48 |
+| client/src/app/lists                                                                                         |          3 |         79 |          0 |          9 |         88 |
+| client/src/app/members                                                                                       |         19 |        826 |         75 |         92 |        993 |
+| client/src/app/members/member-card                                                                           |          3 |         98 |          0 |         12 |        110 |
+| client/src/app/members/member-detail                                                                         |          4 |        178 |          6 |         20 |        204 |
+| client/src/app/members/member-edit                                                                           |          3 |        149 |          0 |          8 |        157 |
+| client/src/app/members/member-list                                                                           |          3 |        141 |          0 |         17 |        158 |
+| client/src/app/members/member-messages                                                                       |          3 |        102 |          0 |          9 |        111 |
+| client/src/app/members/photo-editor                                                                          |          3 |        158 |         69 |         26 |        253 |
+| client/src/app/messages                                                                                      |          3 |        144 |          0 |         13 |        157 |
+| client/src/app/nav                                                                                           |          3 |        134 |          0 |          8 |        142 |
+| client/src/app/register                                                                                      |          3 |        147 |          0 |         21 |        168 |
+| client/src/environments                                                                                      |          2 |          8 |         11 |          4 |         23 |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                     | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/AccountController.cs                                  | C#         |         71 |          0 |         18 |         89 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/AdminController.cs                                    | C#         |         56 |          0 |         13 |         69 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/BaseApiController.cs                                  | C#         |         17 |          0 |          2 |         19 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/BuggyController.cs                                    | C#         |         46 |          0 |          7 |         53 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/LikesController.cs                                    | C#         |         51 |          0 |         13 |         64 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/MessagesController.cs                                 | C#         |         75 |          0 |         24 |         99 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Controllers/UsersController.cs                                    | C#         |        106 |          0 |         28 |        134 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/CreateMessageDto.cs                                          | C#         |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/LikeDto.cs                                                   | C#         |         16 |          0 |          1 |         17 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/LoginDto.cs                                                  | C#         |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/MemberDto.cs                                                 | C#         |         24 |          0 |          2 |         26 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/MemberUpdateDTO.cs                                           | C#         |         15 |          0 |          1 |         16 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/MessageDto.cs                                                | C#         |         20 |          0 |          1 |         21 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/PhotoDto.cs                                                  | C#         |         13 |          0 |          1 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/RegisterDto.cs                                               | C#         |         21 |          0 |          7 |         28 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/DTOs/UserDto.cs                                                   | C#         |         15 |          0 |          2 |         17 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Entities/AppRole.cs                                               | C#         |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Entities/AppUser.cs                                               | C#         |         23 |          0 |          4 |         27 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Entities/AppUserRole.cs                                           | C#         |         13 |          0 |          1 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Entities/Message.cs                                               | C#         |         22 |          0 |          2 |         24 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Entities/Photo.cs                                                 | C#         |         18 |          0 |          2 |         20 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Entities/UserLike.cs                                              | C#         |         14 |          0 |          1 |         15 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Errors/ApiException.cs                                            | C#         |         19 |          0 |          2 |         21 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Extensions/ApplicationServiceExtensions.cs                        | C#         |         32 |          0 |          2 |         34 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Extensions/ClaimsPrincipleExtensions.cs                           | C#         |         19 |          0 |          2 |         21 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Extensions/DateTimeExtensions.cs                                  | C#         |         17 |          0 |          1 |         18 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Extensions/HttpExtensions.cs                                      | C#         |         22 |          0 |          4 |         26 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Extensions/IdentityServiceExtensions.cs                           | C#         |         47 |          0 |          6 |         53 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/AutoMapperProfiles.cs                                     | C#         |         27 |          0 |          1 |         28 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/CloudinarySettings.cs                                     | C#         |         13 |          0 |          1 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/LikesParams.cs                                            | C#         |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/LogUserActivity.cs                                        | C#         |         23 |          0 |          4 |         27 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/MessageParams.cs                                          | C#         |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/PagedList.cs                                              | C#         |         29 |          0 |          4 |         33 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/PaginationHeader.cs                                       | C#         |         21 |          0 |          2 |         23 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/PaginationParams.cs                                       | C#         |         18 |          0 |          1 |         19 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Helpers/UserParams.cs                                             | C#         |         15 |          0 |          3 |         18 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Interfaces/ILikesRepository.cs                                    | C#         |         16 |          0 |          1 |         17 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Interfaces/IMessageRepository.cs                                  | C#         |         19 |          0 |          1 |         20 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Interfaces/IPhotoService.cs                                       | C#         |         13 |          0 |          1 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Interfaces/ITokenService.cs                                       | C#         |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Interfaces/IUserRepository.cs                                     | C#         |         20 |          0 |          1 |         21 |
+| /home/ash/FriendshipApp/FriendshipApp1/API/Middleware/ExceptionMiddleware.cs                                 | C#         |         44 |          0 |          9 |         53 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_forms/date-input/date-input.component.css             | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_forms/date-input/date-input.component.html            | HTML       |         15 |          0 |          1 |         16 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_forms/date-input/date-input.component.ts              | TypeScript |         24 |          0 |          2 |         26 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_forms/text-input/text-input.component.css             | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_forms/text-input/text-input.component.html            | HTML       |         23 |          0 |          5 |         28 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_forms/text-input/text-input.component.ts              | TypeScript |         22 |          0 |          2 |         24 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_guards/auth.guard.ts                                  | TypeScript |         30 |          0 |          3 |         33 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_guards/prevent-unsaved-changes.guard.ts               | TypeScript |         17 |          0 |          2 |         19 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_inerceptors/error.interceptor.ts                      | TypeScript |         79 |          0 |          7 |         86 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_inerceptors/jwt.interceptor.ts                        | TypeScript |         27 |          0 |          3 |         30 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_inerceptors/loading.interceptor.ts                    | TypeScript |         21 |          0 |          3 |         24 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_models/member.ts                                      | TypeScript |         17 |          0 |          2 |         19 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_models/message.ts                                     | TypeScript |         12 |          0 |          1 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_models/pagination.ts                                  | TypeScript |         10 |          0 |          2 |         12 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_models/photo.ts                                       | TypeScript |          5 |          0 |          1 |          6 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_models/user.ts                                        | TypeScript |          6 |          0 |          1 |          7 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_modules/shared.module.ts                              | TypeScript |         27 |          0 |          2 |         29 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_modules/userParams.ts                                 | TypeScript |         11 |          0 |          3 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_pipes/time-ago.pipe.ts                                | TypeScript |         30 |          0 |          7 |         37 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_resolvers/member-detailed.resolver.ts                 | TypeScript |         14 |          0 |          3 |         17 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/account.service.ts                           | TypeScript |         42 |          0 |          7 |         49 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/busy.service.ts                              | TypeScript |         26 |          0 |          5 |         31 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/members.service.ts                           | TypeScript |         99 |          0 |         17 |        116 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/message.service.ts                           | TypeScript |         35 |          0 |          7 |         42 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/paginationHelper.ts                          | TypeScript |         23 |          0 |          5 |         28 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/photo.service.ts                             | TypeScript |         17 |          0 |          5 |         22 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/admin-panel/admin-panel.component.css            | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/admin-panel/admin-panel.component.html           | HTML       |          1 |          0 |          1 |          2 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/admin/admin-panel/admin-panel.component.ts             | TypeScript |          9 |          0 |          3 |         12 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app-routing.module.ts                                  | TypeScript |         49 |          0 |          3 |         52 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.component.css                                      | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.component.html                                     | HTML       |         22 |          0 |          2 |         24 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.component.spec.ts                                  | TypeScript |         31 |          0 |          5 |         36 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.component.ts                                       | TypeScript |         29 |          0 |          5 |         34 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.module.ts                                          | TypeScript |        112 |          0 |          2 |        114 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/not-found/not-found.component.css               | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/not-found/not-found.component.html              | HTML       |          6 |          0 |          1 |          7 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/not-found/not-found.component.ts                | TypeScript |         12 |          0 |          5 |         17 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/server-error/server-error.component.css         | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/server-error/server-error.component.html        | HTML       |         26 |          0 |          1 |         27 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/server-error/server-error.component.ts          | TypeScript |         16 |          0 |          3 |         19 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/test-errors/test-errors.component.css           | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/test-errors/test-errors.component.html          | HTML       |         27 |          0 |          2 |         29 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/errors/test-errors/test-errors.component.ts            | TypeScript |         65 |          0 |          9 |         74 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/home/home.component.css                                | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/home/home.component.html                               | HTML       |         20 |          0 |          2 |         22 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/home/home.component.ts                                 | TypeScript |         19 |          0 |          6 |         25 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/lists/lists.component.css                              | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/lists/lists.component.html                             | HTML       |         46 |          0 |          3 |         49 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/lists/lists.component.ts                               | TypeScript |         33 |          0 |          5 |         38 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-card/member-card.component.css          | PostCSS    |         31 |          0 |          6 |         37 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-card/member-card.component.html         | HTML       |         41 |          0 |          1 |         42 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-card/member-card.component.ts           | TypeScript |         26 |          0 |          5 |         31 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-detail/carousel.config.ts               | TypeScript |          7 |          3 |          2 |         12 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-detail/member-detail.component.css      | PostCSS    |         13 |          0 |          3 |         16 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-detail/member-detail.component.html     | HTML       |         85 |          0 |          4 |         89 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-detail/member-detail.component.ts       | TypeScript |         73 |          3 |         11 |         87 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-edit/member-edit.component.css          | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-edit/member-edit.component.html         | HTML       |         97 |          0 |          2 |         99 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-edit/member-edit.component.ts           | TypeScript |         52 |          0 |          5 |         57 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-list/member-list.component.css          | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-list/member-list.component.html         | HTML       |         92 |          0 |          8 |        100 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-list/member-list.component.ts           | TypeScript |         49 |          0 |          8 |         57 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-messages/member-messages.component.css  | PostCSS    |         13 |          0 |          3 |         16 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-messages/member-messages.component.html | HTML       |         63 |          0 |          1 |         64 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/member-messages/member-messages.component.ts   | TypeScript |         26 |          0 |          5 |         31 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/photo-editor/photo-editor.component.css        | PostCSS    |         11 |          0 |          3 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/photo-editor/photo-editor.component.html       | HTML       |         70 |          0 |          3 |         73 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/members/photo-editor/photo-editor.component.ts         | TypeScript |         77 |         69 |         20 |        166 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/messages/messages.component.css                        | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/messages/messages.component.html                       | HTML       |         98 |          0 |          5 |        103 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/messages/messages.component.ts                         | TypeScript |         46 |          0 |          7 |         53 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/nav/nav.component.css                                  | PostCSS    |          7 |          0 |          1 |          8 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/nav/nav.component.html                                 | HTML       |         96 |          0 |          3 |         99 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/nav/nav.component.ts                                   | TypeScript |         31 |          0 |          4 |         35 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/register/register.component.css                        | PostCSS    |          0 |          0 |          1 |          1 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/register/register.component.html                       | HTML       |         76 |          0 |         12 |         88 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/app/register/register.component.ts                         | TypeScript |         71 |          0 |          8 |         79 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/environments/environment.prod.ts                           | TypeScript |          4 |          0 |          1 |          5 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/environments/environment.ts                                | TypeScript |          4 |         11 |          3 |         18 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/index.html                                                 | HTML       |         13 |          0 |          1 |         14 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/main.ts                                                    | TypeScript |          9 |          0 |          4 |         13 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/polyfills.ts                                               | TypeScript |          1 |         57 |          8 |         66 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/styles.css                                                 | PostCSS    |        143 |         77 |         21 |        241 |
+| /home/ash/FriendshipApp/FriendshipApp1/client/src/test.ts                                                    | TypeScript |         11 |          2 |          3 |         16 |
+| Total                                                                                                        |            |      3,713 |        222 |        520 |      4,455 |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
