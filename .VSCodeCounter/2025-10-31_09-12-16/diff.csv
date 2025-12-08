@@ -1,9 +1,0 @@
-"filename", "language", "TypeScript", "HTML", "comment", "blank", "total"
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_directives/has-role.directive.ts", "TypeScript", 10, 0, 0, 2, 12
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_guards/admin.guard.ts", "TypeScript", 32, 0, 0, 3, 35
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_models/user.ts", "TypeScript", 1, 0, 0, 0, 1
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/_services/account.service.ts", "TypeScript", 6, 0, 0, 1, 7
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/app-routing.module.ts", "TypeScript", 7, 0, 0, 0, 7
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/app.module.ts", "TypeScript", 2, 0, 0, 0, 2
-"/home/ash/FriendshipApp/FriendshipApp1/client/src/app/nav/nav.component.html", "HTML", 0, 9, 0, 0, 9
-"Total", "-", 58, 9, 0, 6, 73
