@@ -21,6 +21,8 @@ using System.Text;
 using API.Extensions;
 using API.Middleware;
 using API.SignalR;
+using static Microsoft.AspNetCore.Routing.IEndpointRouteBuilder;
+using Microsoft.Extensions.FileProviders;
 
 namespace API
 {
@@ -52,9 +54,24 @@ namespace API
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseDefaultFiles(new DefaultFilesOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "wwwroot", "browser"))
+            });
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "wwwroot", "browser"))
+            });
+
+
+            
             app.UseMiddleware<ExceptionMiddleware>();
            
             app.UseHttpsRedirection();
+            
 
             app.UseRouting();
 
@@ -67,13 +84,17 @@ namespace API
 
             app.UseAuthorization();
 
+            
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<PresenceHub>("hubs/presence");
                 endpoints.MapHub<MessageHub>("hubs/message");
-            });
 
+                endpoints.MapFallbackToFile("browser/index.html");
+            });
+            
             
         }
     }
