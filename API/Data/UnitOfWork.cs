@@ -2,9 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Data.Migrations;
 using API.Interfaces;
 using AutoMapper;
+using API.Data.Migrations;
+
 
 namespace API.Data
 {
@@ -22,6 +23,8 @@ namespace API.Data
         public IUserRepository UserRepository => new UserRepository(_context, _mapper);
 
         public IMessageRepository MessageRepository => new MessageRepository(_context, _mapper);
+
+        public ILikesRepository LikesRepository => throw new NotImplementedException();
 
         public ILikesRepository LikesRepository => new LikesRepository(_context);
 
