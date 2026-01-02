@@ -40,21 +40,11 @@ namespace API
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-    Host.CreateDefaultBuilder(args)
-        .ConfigureWebHostDefaults(webBuilder =>
-        {
-            webBuilder
-                .UseStartup<Startup>()
-                .UseKestrel(options =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    options.ListenLocalhost(5001, listenOptions =>
-                    {
-                        listenOptions.UseHttps("SSL/server.pfx", "c1nna1v410%");
-                    });
+                    webBuilder.UseStartup<Startup>();
                 });
-        });
-        
-
     }
     
 }

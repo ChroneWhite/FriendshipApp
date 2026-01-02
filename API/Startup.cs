@@ -70,7 +70,7 @@ namespace API
             
             app.UseMiddleware<ExceptionMiddleware>();
            
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             
 
             app.UseRouting();
@@ -79,7 +79,7 @@ namespace API
             .AllowAnyHeader()
             .AllowCredentials()
             .AllowAnyMethod()
-            .WithOrigins("https://localhost:4200"));
+            .WithOrigins("http://localhost:8080"));
             app.UseAuthentication();
 
             app.UseAuthorization();
