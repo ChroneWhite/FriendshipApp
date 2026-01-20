@@ -38,14 +38,16 @@ namespace API.Data
 
             query = query.Where(u => u.UserName != userParams.CurrentUsername);
 
-            var minDob = DateTime.Today.AddYears(-userParams.MaxAge -1);
-            var maxDob = DateTime.Today.AddYears(-userParams.MinAge);
+            var minDob = DateTime.UtcNow;
+            minDob = DateTime.Today.AddYears(-userParams.MaxAge -1);
+            var maxDob = DateTime.UtcNow;;
+            maxDob = DateTime.Today.AddYears(-userParams.MinAge);
 
             query = query.Where(u => u.DateOfBirth >= minDob && u.DateOfBirth <= maxDob);
 
-            if (userParams.GenderToShow != "all")
+            if (userParams.Gender != "all")
             {
-             query = query.Where(u => u.Gender == userParams.GenderToShow);   
+             query = query.Where(u => u.Gender == userParams.Gender);   
             }
 
 

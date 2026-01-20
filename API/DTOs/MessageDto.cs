@@ -16,8 +16,8 @@ namespace API.DTOs
         public string RecipientUsername { get; set; }
         public string RecipientPhotoUrl { get; set; }
         public string content { get; set; }
-        public DateTime? DateRead { get; set; }
-        public DateTime MessageSent { get; set; }
+        public DateTime? DateRead { get; set; } = DateTime.UtcNow;
+        public DateTime MessageSent { get; set; }   = DateTime.UtcNow;
         [JsonIgnore]
         public bool SenderDeleted { get; set; } 
         [JsonIgnore]

@@ -15,8 +15,8 @@ namespace API.DTOs
 
         [Required] public string Gender { get; set; }
 
-        [Required] public DateTime DateOfBirth { get; set; }
-
+        [Required] public DateTime DateOfBirth { get; set; } = DateTime.UtcNow;
+        
         [Required] public string City { get; set; }
 
         [Required] public string Country { get; set; }

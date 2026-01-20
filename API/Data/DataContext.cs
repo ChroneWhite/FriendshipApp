@@ -29,7 +29,7 @@ namespace API.Data
             .WithOne(u => u.User)
             .HasForeignKey(ur => ur.UserId)
             .IsRequired();
-
+            
             modelBuilder.Entity<AppRole>()
             .HasMany(ur => ur.UserRoles)
             .WithOne(u => u.Role)
@@ -60,51 +60,26 @@ namespace API.Data
             .HasOne(u => u.Sender)
             .WithMany(m => m.MessagesSent)
             .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.ApplyUtcDateTimeConverter();
         }
-    }
 
-    public static class UtcDateAnnotation
-{
-    private const String IsUtcAnnotation = "IsUtc";
-    private static readonly ValueConverter<DateTime, DateTime> UtcConverter =
-      new ValueConverter<DateTime, DateTime>(v => v, v => DateTime.SpecifyKind(v, DateTimeKind.Utc));
 
-    private static readonly ValueConverter<DateTime?, DateTime?> UtcNullableConverter =
-      new ValueConverter<DateTime?, DateTime?>(v => v, v => v == null ? v : DateTime.SpecifyKind(v.Value, DateTimeKind.Utc));
-
-    public static PropertyBuilder<TProperty> IsUtc<TProperty>(this PropertyBuilder<TProperty> builder, Boolean isUtc = true) =>
-      builder.HasAnnotation(IsUtcAnnotation, isUtc);
-
-    public static Boolean IsUtc(this IMutableProperty property) =>
-      ((Boolean?)property.FindAnnotation(IsUtcAnnotation)?.Value) ?? true;
-
-    /// <summary>
-    /// Make sure this is called after configuring all your entities.
-    /// </summary>
-    public static void ApplyUtcDateTimeConverter(this ModelBuilder builder)
+public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-        foreach (var entityType in builder.Model.GetEntityTypes())
+        foreach (var entry in ChangeTracker.Entries())
         {
-            foreach (var property in entityType.GetProperties())
+            foreach (var prop in entry.Properties)
             {
-                if (!property.IsUtc())
+                if (prop.CurrentValue is DateTime dt && dt.Kind != DateTimeKind.Utc)
                 {
-                    continue;
-                }
-
-                if (property.ClrType == typeof(DateTime))
-                {
-                    property.SetValueConverter(UtcConverter);
-                }
-
-                if (property.ClrType == typeof(DateTime?))
-                {
-                    property.SetValueConverter(UtcNullableConverter);
+                    prop.CurrentValue = DateTime.SpecifyKind(dt, DateTimeKind.Utc);
                 }
             }
         }
+        
+        return await base.SaveChangesAsync(cancellationToken);
     }
-}
+
+
+    }
+
 }

@@ -53,49 +53,42 @@ namespace API
 
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            app.UseDefaultFiles(new DefaultFilesOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                    Path.Combine(env.ContentRootPath, "wwwroot", "browser"))
-            });
+{
+    var wwwrootPath = Path.Combine(env.ContentRootPath, "wwwroot");
+    Console.WriteLine($"Serving static files from: {wwwrootPath}");
+    Console.WriteLine($"Directory exists: {Directory.Exists(wwwrootPath)}");
+    
+    app.UseDefaultFiles(new DefaultFilesOptions
+    {
+        FileProvider = new PhysicalFileProvider(wwwrootPath)
+    });
 
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                    Path.Combine(env.ContentRootPath, "wwwroot", "browser"))
-            });
+    app.UseStaticFiles(new StaticFileOptions
+    {
+        FileProvider = new PhysicalFileProvider(wwwrootPath)
+    });
 
+    app.UseMiddleware<ExceptionMiddleware>();
 
-            
-            app.UseMiddleware<ExceptionMiddleware>();
-           
-            //app.UseHttpsRedirection();
-            
+    app.UseRouting();
 
-            app.UseRouting();
+    app.UseCors(x => x
+        .AllowAnyHeader()
+        .AllowCredentials()
+        .AllowAnyMethod()
+        .WithOrigins("http://localhost:8080"));
+        
+    app.UseAuthentication();
+    app.UseAuthorization();
 
-            app.UseCors(x => x
-            .AllowAnyHeader()
-            .AllowCredentials()
-            .AllowAnyMethod()
-            .WithOrigins("http://localhost:8080"));
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-            
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-                endpoints.MapHub<PresenceHub>("hubs/presence");
-                endpoints.MapHub<MessageHub>("hubs/message");
-
-                endpoints.MapFallbackToFile("browser/index.html");
-            });
-            
-            
-        }
-    }
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllers();
+        endpoints.MapHub<PresenceHub>("hubs/presence");
+        endpoints.MapHub<MessageHub>("hubs/message");
+        
+        //endpoints.MapFallbackToController("Index", "Fallback");
+    });
+}
+}
 }
