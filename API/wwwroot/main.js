@@ -507,12 +507,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 class UserParams {
     constructor(user) {
+        this.gender = 'all';
         this.minAge = 18;
         this.maxAge = 99;
         this.pageNumber = 1;
         this.pageSize = 24;
         this.orderBy = 'lastActive';
-        this.gender = user.gender === 'female' ? 'male' : 'female';
     }
 }
 
@@ -2662,7 +2662,11 @@ function MemberListComponent_div_31_Template(rf, ctx) { if (rf & 1) {
 class MemberListComponent {
     constructor(memberService) {
         this.memberService = memberService;
-        this.genderList = [{ value: 'male', display: 'Males' }, { value: 'female', display: 'Females' }];
+        this.genderList = [
+            { value: 'male', display: 'Males' },
+            { value: 'female', display: 'Females' },
+            { value: 'all', display: 'All' },
+        ];
         this.userParams = this.memberService.getUserParams();
     }
     ngOnInit() {
@@ -2670,7 +2674,7 @@ class MemberListComponent {
     }
     loadMembers() {
         this.memberService.setUserParams(this.userParams);
-        this.memberService.getMembers(this.userParams).subscribe(response => {
+        this.memberService.getMembers(this.userParams).subscribe((response) => {
             this.members = response.result;
             this.pagination = response.pagination;
         });
@@ -3880,8 +3884,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    apiUrl: 'http://localhost:5001/api/',
-    hubUrl: 'http://localhost:5001/hubs/',
+    apiUrl: 'http://localhost:8080/api/',
+    hubUrl: 'http://localhost:8080/hubs/',
 };
 /*
  * For easier debugging in development mode, you can import the following file

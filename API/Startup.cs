@@ -54,18 +54,15 @@ namespace API
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
-    var wwwrootPath = Path.Combine(env.ContentRootPath, "wwwroot");
-    Console.WriteLine($"Serving static files from: {wwwrootPath}");
-    Console.WriteLine($"Directory exists: {Directory.Exists(wwwrootPath)}");
     
     app.UseDefaultFiles(new DefaultFilesOptions
     {
-        FileProvider = new PhysicalFileProvider(wwwrootPath)
+        FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "wwwroot"))
     });
 
     app.UseStaticFiles(new StaticFileOptions
     {
-        FileProvider = new PhysicalFileProvider(wwwrootPath)
+        FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "wwwroot"))
     });
 
     app.UseMiddleware<ExceptionMiddleware>();
@@ -87,7 +84,6 @@ namespace API
         endpoints.MapHub<PresenceHub>("hubs/presence");
         endpoints.MapHub<MessageHub>("hubs/message");
         
-        //endpoints.MapFallbackToController("Index", "Fallback");
     });
 }
 }
