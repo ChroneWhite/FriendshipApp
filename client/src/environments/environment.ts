@@ -4,10 +4,11 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:8080/api/',
-  hubUrl: 'http://localhost:8080/hubs/',
+  // apiUrl: 'http://185.221.160.38/api/',
+  // hubUrl: 'http://185.221.160.38/hubs/',
+  apiUrl: 'http://localhost:5001/api/',
+  hubUrl: 'http://localhost:5001/hubs/',
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
