@@ -29,7 +29,15 @@ namespace API.Extensions
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddDbContext<DataContext>(options =>
             {
+                
+                var cs = config.GetConnectionString("DefaultConnection");
+                Console.WriteLine($"CS FROM CONFIG!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! = '{cs}'");
+
+
                 options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
+
+                
+
                 options.ConfigureWarnings(w => 
                 w.Ignore(RelationalEventId.PendingModelChangesWarning));
             });

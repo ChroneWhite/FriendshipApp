@@ -3,12 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  // apiUrl: 'http://185.221.160.38/api/',
-  // hubUrl: 'http://185.221.160.38/hubs/',
-  apiUrl: 'http://localhost:5001/api/',
-  hubUrl: 'http://localhost:5001/hubs/',
+  production: true,
+  apiUrl: 'https://safeplace-web.duckdns.org/api/',
+  hubUrl: 'https://safeplace-web.duckdns.org/hubs/',
 };
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

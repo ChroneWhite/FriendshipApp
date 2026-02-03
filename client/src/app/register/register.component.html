@@ -74,15 +74,3 @@
     </button>
   </div>
 </form>
-<div class="text-danger">
-  <h1>ERRORS</h1>
-  <div *ngIf="validationErrors" class="text-danger">
-    <h1>validationErrors</h1>
-    <ul *ngIf="validationErrors.length > 0">
-      <h1>validationErrors.length > 0</h1>
-      <li *ngFor="let error of validationErrors">
-        {{ error.eroror.description }}
-      </li>
-    </ul>
-  </div>
-</div>
