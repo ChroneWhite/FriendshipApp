@@ -23,6 +23,7 @@ using API.Middleware;
 using API.SignalR;
 using static Microsoft.AspNetCore.Routing.IEndpointRouteBuilder;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace API
 {
@@ -67,6 +68,14 @@ namespace API
 
     app.UseMiddleware<ExceptionMiddleware>();
 
+    app.UseForwardedHeaders(new ForwardedHeadersOptions
+    {
+        ForwardedHeaders = ForwardedHeaders.XForwardedProto,
+        KnownNetworks = { },
+        KnownProxies = { }
+    });
+
+
     app.UseRouting();
 
     app.UseCors(x => x
@@ -86,6 +95,9 @@ namespace API
         endpoints.MapFallbackToController("Index", "Fallback");
         
     });
+
+    
+
 }
 }
 }

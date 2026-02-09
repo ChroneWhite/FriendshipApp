@@ -1,0 +1,96 @@
+@import "./_variables";
+
+$primary: #e87aac;
+$secondary: #e090b0;
+$success: #91d291;
+$info: #aad1df;
+/*$font-family-base: "Monotone";*/
+
+@import "./bootstrap_scss/bootstrap";
+@import "./_bootswatch";
+
+/* You can add global styles to this file, and also import other style files */
+nav img {
+  border-radius: 50%;
+  border: none !important;
+}
+.bg-dark {
+  background-image: url("assets/navbar-background.png");
+}
+
+.tab-panel {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.nav-tabs > li.open,
+.member-tabset > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+
+.member-tabset > .nav-tabs > li.open > a,
+.member-tabset > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+
+.member-tabset > .nav-tabs > li.open > a > i,
+.member-tabset > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+
+.member-tabset > .nav-tabs > li.open .dropdown-menu,
+.member-tabset > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+.member-tabset > .nav-tabs > li.active {
+  border-bottom: 4px solid #e95420;
+  position: relative;
+}
+
+.member-tabset > .nav-tabs > li.active > a {
+  border: 0 !important;
+  color: #333333;
+}
+
+.member-tabset > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+
+.member-tabset > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.x-sign {
+  color: white;
+  --color1: white;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+  font-family: Monoton;
+  font-size: 3rem;
+}
+
+.text-glow {
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #f6ff78,
+    0 0 30px #f6ff78,
+    0 0 40px #f6ff78,
+    0 0 55px #f6ff78,
+    0 0 75px #f6ff78,
+    2px 2px 2px rgba(206, 204, 0, 0);
+}
+.mt-5 {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}

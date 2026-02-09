@@ -7,13 +7,16 @@ import { PresenceService } from './_services/presence.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'Friendship app';
+  title = 'Safe Place';
   users: any;
 
-  constructor(private accountService: AccountService, private presence: PresenceService) {}
+  constructor(
+    private accountService: AccountService,
+    private presence: PresenceService,
+  ) {}
 
   ngOnInit() {
     this.setCurrentUser();
@@ -25,6 +28,5 @@ export class AppComponent implements OnInit {
       this.accountService.setCurrentUser(user);
       this.presence.createHubConnection(user);
     }
-
   }
 }

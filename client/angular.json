@@ -25,7 +25,7 @@
               "./node_modules/bootswatch/dist/yeti/bootstrap.css",
               "./node_modules/font-awesome/css/font-awesome.css",
               "./node_modules/ngx-toastr/toastr.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "vendorChunk": true,
