@@ -31,8 +31,6 @@ namespace API.Extensions
             {
                 
                 var cs = config.GetConnectionString("DefaultConnection");
-                Console.WriteLine($"CS FROM CONFIG!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! = '{cs}'");
-
 
                 options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
 
